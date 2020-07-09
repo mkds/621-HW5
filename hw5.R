@@ -123,4 +123,5 @@ plot(STARS,TARGET, main="STARS")
 allvarmodel <- glm(TARGET ~ ., family=poisson, completed_wine)
 summary(allvarmodel)
 
+model1= glm(TARGET~STARS+LabelAppeal+AcidIndex,family=poisson,completed_wine)
 #Next steps, let's try some analysis to determine the "best" variables to use in a model
